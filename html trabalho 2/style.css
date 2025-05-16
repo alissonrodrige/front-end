@@ -1,0 +1,102 @@
+ body {
+      margin: 0;
+      font-family: #000000, serif;
+      background-color: #c0a799;
+    }
+
+    header {
+      background-color: #582d1c;
+      color: #a78876;
+      padding: 20px;
+      text-align: center;
+      font-family: Quintessential, serif;
+    }
+
+    nav {
+      background-color: #6b432c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #a78876;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+.highlights{
+  display: flex;
+  align-items: center;
+  gap: 20px;             
+  padding: 20px;
+}
+
+.imagem-highlights {
+  width: 300px;       
+  height: auto;      
+  display: block;      
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+.imagem-gods {
+  width: 300px;       
+  height: auto;       
+  display: block;     
+  margin-left: auto;   
+  margin-right: auto;
+}
+
+.imagem-local {
+  width: 300px;        
+  height: auto;        
+  display: block;      
+  margin-left: auto;   
+  margin-right: auto;
+}
+
+.imagem-world {
+  width: 300px;      
+  height: auto;        
+  display: block;     
+  margin-left: auto;   
+  margin-right: auto;
+}
+
+.noticia p{
+  text-align: center;
+  margin-top: 20px;    
+  color:#725347
+}
+
+.noticia {
+  text-align: center;
+  margin-top: 20px;    
+  color:#582d1c
+}
+
+section h2 {
+  color: #582d1c;
+}
+
+    footer {
+      background-color: #582d1c;
+      color: #a78876;
+      text-align: center;
+      padding: 15px;
+    }
+
+    
