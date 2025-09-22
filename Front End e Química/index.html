@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>NaHCO3</title>
+      <meta name="description" content="Site educativo sobre o bicarbonato de sódio (NaHCO3). Propriedades, estrutura, obtenção e aplicações.">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" href="img/icon.ico">
+   </head>
+   <body>
+
+      <header id="site-header" class="site-header">
+        <div class="container">
+          <h1 id="site-title" class="site-title">
+            Bicarbonato de Sódio <small class="subtitle">NaHCO<sub>3</sub></small>
+          </h1>
+          <div class="hamburger" id="hamburger-btn" aria-label="Abrir menu" role="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+
+          <nav id="main-nav" class="main-nav" aria-label="Menu principal">
+            <ul id="nav-list" class="nav-list">
+              <li><a id="link-info" href="#info">Informações</a></li>
+              <li><a id="link-molecule" href="#moleculeSVG">Molécula Interativa</a></li>
+              <li><a id="link-aplicacoes" href="#aplicacoes">Aplicações</a></li>
+              <li><a id="link-referencias" href="#referencias">Referências</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+         <section id="hero" class="hero">
+            <div class="container">
+               <h2 class="hero-title">Um olhar interativo sobre o <em>bicarbonato de sódio</em></h2>
+               <p class="hero-desc">Representação estilizada e informações educativas. Clica nos átomos da molécula pra abrir explicações específicas — tudo pensado pra ser fácil de entender e apresentar.</p>
+            </div>
+         </section>
+         <section id="info" class="fixed-info container">
+            <h2>Informações principais</h2>
+            <dl>
+               <dt>Nome químico</dt>
+               <dd>bicarbonato de sódio</dd>
+               <dt>Nome usual</dt>
+               <dd>bicarbonato de sódio (baking soda)</dd>
+               <dt>Fórmula</dt>
+               <dd>NaHCO<sub>3</sub></dd>
+               <dt>Tipo de ligação</dt>
+               <dd>Iônico (Na<sup>+</sup> e o ânion HCO<sub>3</sub><sup>−</sup>) e covalente/ressonante dentro do ânion.</dd>
+               <dt>Geometria</dt>
+               <dd>Ao redor do carbono: trigonal plana (ressonância entre os oxigênios do grupo carbonato).</dd>
+               <dt>Estado físico (25°C)</dt>
+               <dd>Sólido cristalino branco.</dd>
+            </dl>
+         </section>
+
+  <section>
+
+<div class="container">
+  <div class="interactive-molecule-wrapper">
+  <h2>Representação Visual Interativa</h2>
+    <div class="interactive-molecule">
+      <svg id="moleculeSVG" width="400" height="300" viewBox="0 0 400 300">
+        
+        <!-- ligações -->
+        <line x1="200" y1="120" x2="200" y2="60" stroke="white" stroke-width="4" />
+        <line x1="200" y1="120" x2="140" y2="180" stroke="white" stroke-width="4" />
+        <line x1="200" y1="120" x2="260" y2="180" stroke="white" stroke-width="4" />
+        <line x1="200" y1="120" x2="200" y2="210" stroke="white" stroke-width="4" />
+
+        <!-- atomos HCO₃ -->
+        <g class="atomo">
+          <circle class="atom" data-element="C" cx="200" cy="120" r="25" fill="#ff6b6b" stroke="white" stroke-width="3"/>
+          <text x="200" y="120" fill="white" font-size="18" font-family="Arial" text-anchor="middle" dominant-baseline="middle">C</text>
+        </g>
+
+        <g class="atomo">
+          <circle class="atom" data-element="O" cx="200" cy="60" r="25" fill="darkcyan" stroke="white" stroke-width="3"/>
+          <text x="200" y="60" fill="white" font-size="18" font-family="Arial" text-anchor="middle" dominant-baseline="middle">O</text>
+        </g>
+
+        <g class="atomo">
+          <circle class="atom" data-element="O" cx="140" cy="180" r="25" fill="darkcyan" stroke="white" stroke-width="3"/>
+          <text x="140" y="180" fill="white" font-size="18" font-family="Arial" text-anchor="middle" dominant-baseline="middle">O</text>
+        </g>
+
+        <g class="atomo">
+          <circle class="atom" data-element="O" cx="260" cy="180" r="25" fill="darkcyan" stroke="white" stroke-width="3"/>
+          <text x="260" y="180" fill="white" font-size="18" font-family="Arial" text-anchor="middle" dominant-baseline="middle">O</text>
+        </g>
+
+        <g class="atomo">
+          <circle class="atom" data-element="H" cx="200" cy="210" r="25" fill="#ffe066" stroke="white" stroke-width="3"/>
+          <text x="200" y="210" fill="black" font-size="18" font-family="Arial" text-anchor="middle" dominant-baseline="middle">H</text>
+        </g>
+        <!-- íon Na -->
+        <g class="atomo">
+          <circle class="atom" data-element="Na" cx="60" cy="120" r="25" fill="#4dabf7" stroke="white" stroke-width="3"/>
+          <text x="60" y="120" fill="white" font-size="18" font-family="Arial" text-anchor="middle" dominant-baseline="middle">
+            Na
+            <tspan baseline-shift="super" font-size="12">+</tspan>
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+  <div class="image">
+    <img src="img/bicarbonato.webp" alt="Bicarbonato de Sódio em um recipiente" width="200">
+  </div>
+
+</section>
+
+
+         <section id="propriedades" class="container">
+            <h2>Propriedades e comportamento</h2>
+            <ul>
+               <li><strong>Solubilidade:</strong> Solúvel em água; em solução forma leve alcalinidade.</li>
+               <li><strong>Ponto de decomposição:</strong> Decompõe-se quando aquecido intensamente, liberando CO₂ e H₂O (temperatura de decomposição típica na faixa de centenas de graus Celsius).</li>
+               <li><strong>Densidade:</strong> Sólido cristalino (valor disponível em fichas técnicas — recomendamos verificar a referência antes de citar valores exatos).</li>
+               <li><strong>Condutividade:</strong> Em solução aquosa, conduz eletricidade por ser um eletrólito (íons livres).</li>
+            </ul>
+         </section>
+         <section class="flex-section">
+          <button class="toggle-btn">
+            Obtenção / Produção <span class="arrow">▼</span>
+          </button>
+          <div class="content-box">
+            <p>
+              Industrialmente, o bicarbonato de sódio é frequentemente obtido a partir do carbonato de sódio (produzido pelo processo Solvay). 
+              O Na₂CO₃ em solução reage com CO₂ e água para precipitar NaHCO₃, que é então coletado e purificado.
+            </p>
+          </div>
+        </section>
+
+        <section class="flex-section" id="aplicacoes">
+          <button class="toggle-btn">
+            Aplicações <span class="arrow">▼</span>
+          </button>
+          <div class="content-box">
+            <ul>
+              <li>Agente de fermentação na panificação (libera CO₂ quando aquecido).</li>
+              <li>Antiácido para neutralizar excesso de ácido gástrico (uso médico caseiro).</li>
+              <li>Produto de limpeza doméstica (abrasivo leve e neutralizador de odores).</li>
+              <li>Uso em algumas formulações de extintores portáteis e em laboratórios como reagente tampão.</li>
+              <li>Agricultura e horticultura (em aplicações específicas de manejo de solo e pH).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="referencias" class="container">
+           <h2>Referências</h2>
+           <ol>
+             <li>
+               PubChem <br>
+               <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">
+                 https://pubchem.ncbi.nlm.nih.gov/
+               </a>
+             </li>
+             <li>
+               Britannica <br>
+               <a href="https://www.britannica.com/" target="_blank" rel="noopener noreferrer">
+                 https://www.britannica.com/
+               </a>
+             </li>
+             <li>
+               Wikipédia <br>
+               <a href="https://pt.wikipedia.org/" target="_blank" rel="noopener noreferrer">
+                 https://pt.wikipedia.org/
+               </a>
+             </li>
+           </ol>
+        </section>
+
+      </main>
+
+      <footer class="site-footer">
+         <div class="container">
+            <p>Trabalho escolar — Bicarbonato de Sódio (NaHCO<sub>3</sub>)<br>Desenvolvido por <b>Alisson Rodrigues de Barros Cazeiro</b></p>
+            <p>Professores: <b>Tiago L. Telecken</b> (Programação Web Front-End) & <b>Nicolle Rupenthal</b> (Química)</p>
+         </div>
+      </footer>
+
+      <script src="code.js"></script>
+   </body>
+</html>
