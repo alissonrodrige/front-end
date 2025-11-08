@@ -1,0 +1,113 @@
+body {
+  background-color: #555555;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* ---------- CONTAINERS ---------- */
+.card {
+  background-color: #afafaf;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+h1, h3 {
+  color: #333 !important;
+  text-shadow: 0 0 3px rgba(0,0,0,0.05);
+}
+
+/* ---------- LISTAS ---------- */
+.list-group-item {
+  background-color: #fcfafa !important;
+  color: #222 !important;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f0f0f0;
+}
+
+.list-group-item.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ---------- BOTÕES ---------- */
+.btn {
+  border: none !important;
+  transition: background-color 0.3s, transform 0.1s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+/* cores neutras com texto contrastante */
+.btn-primary {
+  background-color: #555 !important;
+  color: #cccccc !important;
+}
+.btn-primary:hover {
+  background-color: #333 !important;
+}
+
+.btn-success {
+  background-color: #666 !important;
+  color: #fff !important;
+}
+.btn-success:hover {
+  background-color: #444 !important;
+}
+
+.btn-danger {
+  background-color: #999 !important;
+  color: #fff !important;
+}
+.btn-danger:hover {
+  background-color: #777 !important;
+}
+
+.btn-warning {
+  background-color: #bbb !important;
+  color: #222 !important;
+}
+.btn-warning:hover {
+  background-color: #999 !important;
+}
+
+/* ---------- FORMULÁRIO ---------- */
+label {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+input, select {
+  background-color: #ffffff !important;
+  color: #222 !important;
+  border: 1px solid #ccc !important;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(120, 120, 120, 0.3);
+  border-color: #888 !important;
+}
+
+/* botão do form */
+form button {
+  background-color: #555 !important;
+  color: #fff !important;
+}
+
+form button:hover {
+  background-color: #333 !important;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  .card { padding: 1rem; }
+  h1 { font-size: 1.6rem; }
+}
