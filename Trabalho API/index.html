@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs - Página 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Consulta com APIs</h1>
+        <nav>
+            <a href="index.html"><u><b>Consulta CEP</b></u></a>
+            <a href="apis.html"><u>Outras APIs</u></a>
+        </nav>
+    </header>
+
+
+    <main>
+    <h2>Consultar Endereço por CEP</h2>
+    <p>Digite um CEP e veja o endereço retornado pela API <strong>ViaCEP</strong>.</p>
+
+
+    <form id="formIdade">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" maxlength="9" placeholder="00000-000">
+    <button type="button" id="btnEnviar">Buscar</button>
+    </form>
+
+
+    <div id="resultado"></div>
+    
+
+    <p>CEPs para Teste:</p>
+    <ul>
+        <li>96501-000</li>
+        <li>19013-030</li>
+        <li>95670-880</li>
+    </ul>
+
+
+    <h2>Importante:</h2>
+    <ul>
+        <li>Nem todos os CEPs estão disponíveis na API</li>
+        <li>O uso do hífen (-) não é obrigatório</li>
+        <li>Quanto mais próximo de uma capital, maior a<br>chance do CEP estar disponível na API</li>
+    </ul>
+
+    </main>
+
+    <footer>
+        <sub>
+            <p>Trabalho de <b>Programação Web Front-End</b> (2025) por <b>Alisson Rodrigues de Barros Cazeiro</b><br>Professor <b>Thiago Lopes Telecken</b></p>
+        </sub>
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

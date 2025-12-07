@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs - Página 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Consulta com APIs</h1>
+        <nav>
+            <a href="index.html"><u>Consulta CEP</u></a>
+            <a href="apis.html"><u><b>Outras APIs</b></u></a>
+        </nav>
+    </header>
+
+<main>
+
+    <!-- CHESS.COM -->
+    <section class="caixa">
+        <h2>Consultar Jogador de Xadrez</h2>
+
+        <label for="chessUser">Nome do jogador:</label>
+        <input type="text" id="chessUser" placeholder="ex: magnuscarlsen">
+
+        <button id="btnChess">Buscar</button>
+
+        <div id="chessResultado" class="resultado"></div>
+    </section>
+
+
+    <!-- FIPE -->
+    <section class="caixa">
+        <h2>Consultar FIPE por marca</h2>
+
+        <label for="fipeMarca">Nome da marca:</label>
+        <input type="text" id="fipeMarca" placeholder="ex: Honda">
+
+        <button id="btnFipe">Buscar</button>
+
+        <div id="fipeResultado" class="resultado"></div>
+    </section>
+
+
+    <!-- BITCOIN -->
+    <section class="caixa">
+        <h2>Preço atual do Bitcoin</h2>
+
+        <div id="btcResultado" class="resultado"></div>
+    </section>
+
+</main>
+
+<footer>
+    <sub>
+        <p>Trabalho de <b>Programação Web Front-End</b> (2025) por <b>Alisson Rodrigues de Barros Cazeiro</b><br>Professor <b>Thiago Lopes Telecken</b></p>
+    </sub>
+</footer>
+
+<script src="codigo.js"></script>
+
+</body>
+</html>

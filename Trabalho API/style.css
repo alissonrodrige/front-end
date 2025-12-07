@@ -1,0 +1,52 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background: #333;
+color: white;
+padding: 10px;
+}
+
+nav a {
+color: white;
+margin-right: 10px;
+text-decoration: none;
+}
+
+main {
+padding: 15px;
+}
+
+p {
+margin-left: 15px;
+}
+
+h2 {
+
+}
+
+form {
+margin-bottom: 15px;
+}
+
+input {
+padding: 5px;
+}
+
+button {
+padding: 5px 10px;
+}
+
+section {
+margin-bottom: 15px;
+padding: 10px;
+border: 2px solid #c7b6cf;
+border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+main { padding: 10px; }
+}
