@@ -1,4 +1,4 @@
-// Página principal: consulta de CEP usando ViaCEP
+
 var botao = document.getElementById("btnEnviar");
 
 if (botao) {
@@ -203,4 +203,5 @@ if (btcResultado) {
             btcResultado.innerHTML = "Erro ao carregar preço do Bitcoin.";
         });
 }
+
 
