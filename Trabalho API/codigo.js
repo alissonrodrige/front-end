@@ -32,11 +32,6 @@ if (botao) {
     });
 }
 
-// ------------------------------------------------------
-// Página secundária: 3 APIs (chess.com, FIPE com entrada, Bitcoin alternativa)
-// ------------------------------------------------------
-
-// Chess.com - informações de jogador
 var chessBotao = document.getElementById("btnChess");
 var chessResultado = document.getElementById("chessResultado");
 
@@ -52,7 +47,6 @@ if (chessBotao) {
         var urlInfo = "https://api.chess.com/pub/player/" + String(nome);
         var urlStats = "https://api.chess.com/pub/player/" + String(nome) + "/stats";
 
-        // Primeiro pega informações básicas
         fetch(urlInfo)
             .then(function (res) { return res.json(); })
             .then(function (dados) {
@@ -65,8 +59,7 @@ if (chessBotao) {
                 var texto = "";
                 texto += "Nome: " + dados.username + "<br>";
                 texto += "Status: " + dados.status + "<br>";
-
-                // Agora pega as estatísticas
+                
                 fetch(urlStats)
                     .then(function (res) { return res.json(); })
                     .then(function (stats) {
@@ -102,7 +95,6 @@ if (chessBotao) {
 }
 
 
-// FIPE - escolher marca
 var fipeBotao = document.getElementById("btnFipe");
 var fipeResultado = document.getElementById("fipeResultado");
 
@@ -113,7 +105,6 @@ function corrigirNomeMarca(texto) {
         return "";
     }
 
-    // separar por hífen (ex: mercedes-benz)
     var partes = nome.split("-");
 
     for (var i = 0; i < partes.length; i++) {
@@ -141,7 +132,6 @@ if (fipeBotao) {
             })
             .then(function (dados) {
 
-                // procurar no array a marca corrigida
                 var marcaObj = null;
                 for (var i = 0; i < dados.length; i++) {
                     if (dados[i].nome.toLowerCase() === marcaCorrigida.toLowerCase()) {
@@ -168,7 +158,6 @@ if (fipeBotao) {
 
                 var qtd = dados.modelos.length;
 
-                // montar lista dos primeiros 10 modelos
                 var lista = "<ul>";
                 for (var j = 0; j < dados.modelos.length && j < 10; j++) {
                     lista += "<li>" + dados.modelos[j].nome + "</li>";
@@ -186,25 +175,20 @@ if (fipeBotao) {
 }
 
 
-//API bitcoin
 var btcResultado = document.getElementById("btcResultado");
 const COINGECKO_API_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd";
 
 if (btcResultado) {
     fetch(COINGECKO_API_URL)
-        //converte resposta do server pra JSON
         .then(function (response) {
             if (!response.ok) {
                 throw new Error("Erro na rede ou status HTTP: " + response.status);
             }
             return response.json();
         })
-        //lida com os dados recebidos
         .then(function (data) {
-            //preço em dólar (USD)
             const precoUsd = data.bitcoin.usd;
             
-            //formataçao preço
             const precoFormatado = precoUsd.toLocaleString('en-US', {
                 style: 'currency',
                 currency: 'USD',
@@ -214,9 +198,9 @@ if (btcResultado) {
 
             btcResultado.innerHTML = precoFormatado;
         })
-        //erros de rede ou erros lançados pelo 'then'
         .catch(function (error) {
             console.error("Erro ao buscar o preço do Bitcoin:", error);
             btcResultado.innerHTML = "Erro ao carregar preço do Bitcoin.";
         });
 }
+
